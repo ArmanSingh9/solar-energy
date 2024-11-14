@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Energy Solutions</title>
+    <link rel="stylesheet" href="Home.css">
+    <style>
+        /* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navigation and Header */
+header {
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/OIP.jpg') center/cover no-repeat;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffc107;
+}
+
+.hero {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-btn {
+    padding: 10px 20px;
+    background: #ffc107;
+    color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.hero-btn:hover {
+    background: #ffb300;
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Products */
+.product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    width: 300px;
+    text-align: left;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product h3 {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.product p {
+    padding: 0 10px;
+    color: #555;
+}
+
+.buy-btn {
+    display: block;
+    margin: 15px;
+    padding: 10px;
+    background: #28a745;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.buy-btn:hover {
+    background: #218838;
+}
+
+/* Contact Form */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea, form button {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #555;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <nav>
+            <h1 class="logo">Solar Energy</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#info">About Solar Energy</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h2>Power Your Life with Solar Energy</h2>
+            <p>Explore renewable energy solutions and make a positive impact on the environment.</p>
+            <a href="#products" class="hero-btn">Explore Products</a>
+        </div>
+    </header>
+
+    <!-- About Solar Energy -->
+    <section id="info" class="section">
+        <div class="content">
+            <h2>About Solar Energy</h2>
+            <p>Solar energy is a renewable, clean power source that can reduce electricity bills and help protect the environment.</p>
+            <h3>Benefits of Solar Energy</h3>
+            <ul class="benefits">
+                <li>Eco-friendly and renewable</li>
+                <li>Reduces carbon footprint</li>
+                <li>Long-term cost savings</li>
+                <li>Minimal maintenance</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Product Listings -->
+    <section id="products" class="section">
+        <h2>Our Solar Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/panelkit.jpg" alt="Solar Panel Kit">
+                <h3>Solar Panel Kit</h3>
+                <p>Efficient solar panel kit for homes and RVs.</p>
+                <a href="https://www.example.com/solar-panel" target="_blank" class="buy-btn">Buy Now</a>
+            </div>
+            
+            <div class="product">
+                <img src="images/panellights.jpg" alt="Solar Garden Lights">
+                <h3>Solar Garden Lights</h3>
+                <p>Eco-friendly lights for your garden, powered by the sun.</p>
+                <a href="https://www.example.com/solar-garden-light" target="_blank" class="buy-btn">Buy Now</a>
+            </div>
+
+            <div class="product">
+                <img src="images/panelcharger.jpg" alt="Portable Solar Charger">
+                <h3>Portable Solar Charger</h3>
+                <p>Stay connected outdoors with this portable solar charger.</p>
+                <a href="https://www.example.com/solar-charger" target="_blank" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Have questions about solar energy? Feel free to reach out!</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Solar Energy Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
